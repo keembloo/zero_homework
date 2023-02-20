@@ -1,0 +1,12 @@
+/* Base 스타일 작성 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {  
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+}

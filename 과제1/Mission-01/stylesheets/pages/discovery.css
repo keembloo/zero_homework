@@ -1,0 +1,176 @@
+
+
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 1020px;
+  height: 2000px;
+  margin: 0 auto;
+}
+
+
+.today-text-area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.today-text {
+  font-size: 24px;
+  font-weight: 400;  
+}
+
+.slash {
+  font-size: 18px;
+  color: #AAA9A9;
+  margin-left: 10px;
+}
+
+.hot {
+  font-size: 16px;
+  font-weight: 400;
+  color: #AAA9A9;
+  margin-left: 10px;  
+}
+
+.honey-area {
+  float: left;
+  margin-bottom: 16px;
+}
+
+.honey { 
+  display: flex;
+  position: relative; 
+  width: 502px;
+  height: 310px;      
+  border: 1px solid #4E4E4E;
+  overflow: hidden;    
+}
+
+.honey:hover {
+  border-color: var(--color-blue);
+}
+
+.honey:focus {
+  border-color: var(--color-blue);
+}
+
+.img2 {
+  position: absolute;  
+  left: 20px;
+  bottom: 20px;
+}
+
+.icon-area {
+  display: inline-block;
+  vertical-align: middle;
+  width: 112px;
+  height: 42px;
+  
+}
+.icon {
+  width: 42px;
+  height: 42px;  
+  background-color: black;
+  opacity: 0.2;  
+}
+
+.img2::before {
+  content:"구매하기";  
+  color: white;
+  background-color: var(--color-blue);
+}
+
+
+.img-honey { 
+  padding-top: 18px;
+  padding-left: 20px;
+}
+
+.vaseline {
+  float: right;
+  width: 502px;
+  height: 310px;  
+  border: 1px solid #4E4E4E;
+  margin-bottom: 16px;
+}
+
+.img-vaseline {
+  margin-left: 20px;
+  margin-top: 17px;
+}
+
+.handCream {
+  float: left;
+  width: 243px;
+  height: 310px;  
+  border: 1px solid #4E4E4E;   
+}
+
+.img-handcream {
+  margin-left: 22px;
+  margin-top: 16px;
+}
+
+.bibs {
+  float: left;
+  width: 243px;
+  height: 310px;  
+  border: 1px solid #4E4E4E;
+  margin-left: 16px;
+}
+
+.img-bibs {
+  position: absolute;
+  transform: translate(-29%, 7%); 
+}
+
+.hanssem {
+  float: right;
+  width: 243px;
+  height: 310px;  
+  border: 1px solid #4E4E4E;
+  margin-right: 16px;
+}
+
+.img-hanssem {
+  position: absolute;
+  transform: translate(-26%, 7%);
+}
+
+.mandoo {
+  position: relative;
+  float: right;
+  width: 243px;
+  height: 310px;  
+  border: 1px solid #4E4E4E;
+}
+
+.img-mandoo {
+  position: absolute;
+  transform: translate(-28%, 5%);
+}
+
+.btn-area {
+  position: absolute;
+  margin-bottom: 50px;
+}
+
+.btn-buy {    
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 112px;
+  height: 42px;    
+  color: white;  
+  background-color: var(--color-blue);
+  border: 10px solid var(--color-blue);
+
+}
+
+
+
