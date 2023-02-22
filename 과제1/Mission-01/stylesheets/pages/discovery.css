@@ -3,15 +3,19 @@
 
 h1 {
   margin-top: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 }
 
 .container {
-  width: 1020px;
-  height: 2000px;
+  width: 1020px;  
   margin: 0 auto;
+  height: 1240px;
 }
 
+.cupanglogo {
+  width: 176px;
+  height: 40px;
+}
 
 .today-text-area {
   display: flex;
@@ -37,25 +41,25 @@ h1 {
   margin-left: 10px;  
 }
 
-.honey-area {
+/* 허니이미지 */
+
+.honey-area, .wettissue-area {
   float: left;
   margin-bottom: 16px;
 }
 
-.honey { 
+.honey, .vaseline, .wettissue { 
   display: flex;
   position: relative; 
+  justify-content: center;
+  align-items: center;
   width: 502px;
   height: 310px;      
-  border: 1px solid #4E4E4E;
+  border: 1px solid #4E4E4E;  
   overflow: hidden;    
 }
 
 .honey:hover {
-  border-color: var(--color-blue);
-}
-
-.honey:focus {
   border-color: var(--color-blue);
 }
 
@@ -67,11 +71,45 @@ h1 {
   transition-duration: 0.3s;  
 }
 
+.honey:hover .icon::before {
+  content: '구매하기';
+  position: relative;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;  
+  white-space: nowrap; 
+}
+
+.img-link:focus .honey {
+  border-color: var(--color-blue);  
+}
+
+.img-link:focus .icon-area {  
+  background-color: var(--color-blue);
+  opacity: 100%;
+  width: 112px;
+  height: 42px;
+  transition-duration: 0.3s;  
+}
+
+.img-link:focus .icon::before {
+  content: '구매하기';
+  position: relative;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;  
+  white-space: nowrap; 
+}
 
 .icon-area {
   display: inline-block;
-  position: absolute;
-  vertical-align: middle;  
+  position: absolute;  
   width: 42px;
   height: 42px;
   left: 20px;
@@ -80,98 +118,326 @@ h1 {
   opacity: 0.2;  
 }
 
-/* .icon {
-  position: absolute;  
-  width: 42px;
-  height: 42px;  
-} */
-
-
-.img-honey { 
-  padding-top: 18px;
-  padding-left: 20px;
+.icon {  
+  display: flex;
+  height: 42px;
+  margin: 0 auto;
 }
 
-.vaseline {
+
+
+/* 바세린이미지 */
+
+.vaseline-area {
   float: right;
-  width: 502px;
-  height: 310px;  
-  border: 1px solid #4E4E4E;
   margin-bottom: 16px;
 }
 
-.img-vaseline {
-  margin-left: 20px;
-  margin-top: 17px;
+.vaseline:hover {
+  border-color: var(--color-blue);   
 }
 
-.handCream {
+.vaseline:hover .icon-area {  
+  background-color: var(--color-blue);
+  opacity: 100%;
+  width: 112px;
+  height: 42px;
+  transition-duration: 0.3s;  
+}
+
+.vaseline:hover .icon::before {
+  content: '구매하기';
+  position: relative;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;  
+  white-space: nowrap; 
+}
+
+.img-link:focus .vaseline {
+  border-color: var(--color-blue);  
+}
+
+
+/* 핸드크림이미지 */
+
+.handcream-area, .bibs-area {
   float: left;
   width: 243px;
-  height: 310px;  
-  border: 1px solid #4E4E4E;   
+  height: 310px;    
+  margin-right: 16px;
+  margin-bottom: 16px; 
 }
 
-.img-handcream {
-  margin-left: 22px;
-  margin-top: 16px;
+.handcream, .bibs{
+  display: flex;
+  position: relative; 
+  justify-content: center;
+  align-items: center;
+  width: 243px;
+  height: 310px;      
+  border: 1px solid #4E4E4E;  
+  overflow: hidden;   
 }
 
-.bibs {
-  float: left;
+.handcream:hover {
+  border-color: var(--color-blue);   
+}
+
+.handcream:hover .icon-area {  
+  background-color: var(--color-blue);
+  opacity: 100%;
+  width: 112px;
+  height: 42px;
+  transition-duration: 0.3s;  
+}
+
+.handcream:hover .icon::before {
+  content: '구매하기';
+  position: relative;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;  
+  white-space: nowrap; 
+}
+
+.img-link:focus .handcream {
+  border-color: var(--color-blue);  
+}
+
+
+/* 빕스이미지 */
+
+.bibs:hover {
+  border-color: var(--color-blue);   
+}
+
+.bibs:hover .icon-area {  
+  background-color: var(--color-blue);
+  opacity: 100%;
+  width: 112px;
+  height: 42px;
+  transition-duration: 0.3s;  
+}
+
+.bibs:hover .icon::before {
+  content: '구매하기';
+  position: relative;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;  
+  white-space: nowrap; 
+}
+
+.img-link:focus .bibs {
+  border-color: var(--color-blue);  
+}
+
+
+/* 한샘 이미지 */
+
+.hanssem-area {
+  float: right;
   width: 243px;
   height: 310px;  
-  border: 1px solid #4E4E4E;
+  margin-right: 16px; 
+  margin-bottom: 16px;   
+}
+
+.hanssem, .mandoo, .febreze, .dyson {  
+  display: flex;
+  position: relative; 
+  justify-content: center;
+  align-items: center;
+  width: 243px;
+  height: 310px;      
+  border: 1px solid #4E4E4E;  
+  overflow: hidden;   
+}
+
+.hanssem:hover {
+  border-color: var(--color-blue);   
+}
+
+.hanssem:hover .icon-area {  
+  background-color: var(--color-blue);
+  opacity: 100%;
+  width: 112px;
+  height: 42px;
+  transition-duration: 0.3s;  
+}
+
+.hanssem:hover .icon::before {
+  content: '구매하기';
+  position: relative;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;  
+  white-space: nowrap; 
+}
+
+.img-link:focus .hanssem {
+  border-color: var(--color-blue);  
+}
+
+
+/* 만두이미지 */
+
+.mandoo-area {
+  float: right;
+  width: 243px;
+  height: 310px;
+  margin-bottom: 16px;
+}
+
+.mandoo:hover {
+  border-color: var(--color-blue);   
+}
+
+.mandoo:hover .icon-area {  
+  background-color: var(--color-blue);
+  opacity: 100%;
+  width: 112px;
+  height: 42px;
+  transition-duration: 0.3s;  
+}
+
+.mandoo:hover .icon::before {
+  content: '구매하기';
+  position: relative;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;  
+  white-space: nowrap; 
+}
+
+
+.img-link:focus .mandoo {
+  border-color: var(--color-blue);  
+}
+
+
+
+/* 물티슈이미지 */
+
+
+.wettissue:hover {
+  border-color: var(--color-blue);   
+}
+
+.wettissue:hover .icon-area {  
+  background-color: var(--color-blue);
+  opacity: 100%;
+  width: 112px;
+  height: 42px;
+  transition-duration: 0.3s;  
+}
+
+.wettissue:hover .icon::before {
+  content: '구매하기';
+  position: relative;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;  
+  white-space: nowrap; 
+}
+
+.img-link:focus .wettissue {
+  border-color: var(--color-blue);  
+}
+
+/* 페브리즈이미지 */
+
+.febreze-area {
+  float: right;
+  width: 243px;
+  height: 310px;
+
+  margin-bottom: 16px;
+}
+
+.febreze:hover {
+  border-color: var(--color-blue);   
+}
+
+.febreze:hover .icon-area {  
+  background-color: var(--color-blue);
+  opacity: 100%;
+  width: 112px;
+  height: 42px;
+  transition-duration: 0.3s;  
+}
+
+.febreze:hover .icon::before {
+  content: '구매하기';
+  position: relative;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;  
+  white-space: nowrap; 
+}
+
+.img-link:focus .febreze {
+  border-color: var(--color-blue);  
+}
+
+
+/* 다이슨청소기이미지 */
+
+
+.dyson-area {
+  float: right;
+  width: 243px;
+  height: 310px;
+  margin-bottom: 16px;
   margin-left: 16px;
 }
 
-.img-bibs {
-  position: absolute;
-  transform: translate(-29%, 7%); 
+.dyson:hover {
+  border-color: var(--color-blue);   
 }
 
-.hanssem {
-  float: right;
-  width: 243px;
-  height: 310px;  
-  border: 1px solid #4E4E4E;
-  margin-right: 16px;
-}
-
-.img-hanssem {
-  position: absolute;
-  transform: translate(-26%, 7%);
-}
-
-.mandoo {
-  position: relative;
-  float: right;
-  width: 243px;
-  height: 310px;  
-  border: 1px solid #4E4E4E;
-}
-
-.img-mandoo {
-  position: absolute;
-  transform: translate(-28%, 5%);
-}
-
-.btn-area {
-  position: absolute;
-  margin-bottom: 50px;
-}
-
-.btn-buy {    
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 112px;
-  height: 42px;    
-  color: white;  
+.dyson:hover .icon-area {  
   background-color: var(--color-blue);
-  border: 10px solid var(--color-blue);
-
+  opacity: 100%;
+  width: 112px;
+  height: 42px;
+  transition-duration: 0.3s;  
 }
 
+.dyson:hover .icon::before {
+  content: '구매하기';
+  position: relative;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 200;  
+  white-space: nowrap; 
+}
 
-
+.img-link:focus .dyson {
+  border-color: var(--color-blue);  
+}
