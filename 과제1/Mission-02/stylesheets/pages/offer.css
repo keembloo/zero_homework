@@ -1,0 +1,163 @@
+/* 오늘의 쇼핑 제안 */
+
+h1 {
+  margin-top: 100px; 
+  margin-bottom: 48px; 
+}
+
+.container {  
+  width: 1020px;     
+  margin: 0 auto;  
+}
+
+.coupanglog {
+  width: 176px;
+  height: 40px;  
+}
+
+.title {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 234px;
+  height: 30px;
+  font-weight: 500;
+  font-size: 24px;  
+  margin-bottom: 24px;  
+}
+
+.icon {
+  display: flex;
+  position: relative;
+  background-image: url('../../assets/icon/shopping.svg');
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.shopping-area {
+  display: flex;
+  position: relative;  
+  width: 1020px;
+  height: 270px;
+}
+
+.box-area1 {
+  display: flex;
+  position: relative;
+  width: 200px;
+  height: 270px;  
+}
+
+.sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 53px;
+  height: 30px;
+  background: var(--color-red-500);
+  color: var( --color-white);
+  border-radius: 0px 0px 4px 0px;
+  z-index: 2;
+}
+
+.hide {
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.img {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 14px;
+  left: 20px;    
+  overflow: hidden;  
+}
+
+.img-info {
+  display: flex;
+  position: absolute;
+  width: 172px;
+  height: 17px;
+  top: 186px;
+  margin-left: 14px;
+}
+
+.text1 {
+  position: absolute;
+  width: 172px;
+  height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  
+}
+
+.rocket {
+  display: flex;
+  position: absolute;
+  width: 55px;
+  height: 16px;
+  margin-top: 29px;
+}
+
+.star1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: 29px;
+  overflow: hidden;
+  height: 80%;
+}
+
+.star-group {  
+  position: relative;
+  width: 68px;
+  height: 200px;
+  background-image: url('../../assets/sprites/rating-stars.png');
+  background-repeat: no-repeat;    
+}
+
+.counting {
+  color: var(--color-gray-700);
+  font-weight: 400;
+  font-size: 14px;
+  width: 45px;
+  height: 17px;  
+  margin-left: 5px;
+}
+
+.box-area2 {
+  display: flex;
+  position: relative;
+  width: 200px;
+  height: 270px;  
+  margin-left: 5px;
+}
+
+
+.star2 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: 49px;
+  overflow: hidden;
+  height: 80%;
+}
+
+.text-free {
+  display: flex;
+  position: absolute;
+  width: 52px;
+  height: 17px;
+  margin-top: 29px;  
+  font-weight: 500;
+  font-size: 14px;  
+  color: var(--color-gray-700);
+}
