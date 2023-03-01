@@ -1,1 +1,525 @@
 /* 카테고리별 추천 광고상품 */
+
+
+.container {
+  width: 1020px;
+  height: 100vh;
+  margin: 0 auto; 
+}
+
+.coupanglogo {
+  margin-top: 100px;
+  margin-left: 139px;
+  width: 246px;
+  height: 56px;
+}
+
+
+/* 추천광고상품 */
+
+
+.section-container {
+  margin-top: 48px;
+  margin-left: 130px;
+}
+
+.text-area {  
+  width: 266px;
+  height: 46px;    
+}
+
+.hot-trend {
+  display: flex;
+  position: relative;  
+  align-items: center;
+  width: 94px;
+  height: 18px;
+  font-size: 16px;
+  font-weight: 500;  
+}
+
+.text {  
+  display: flex;  
+  width: 266px;
+  height: 28px;
+  font-size: 24px;
+  font-weight: 700;  
+  gap: 10px;
+}
+
+.text-category{
+  width: 111px;
+  height: 28px;  
+}
+
+.text-cateory-blue { 
+  width: 145px;
+  height: 28px;
+  color: var(--color-blue-600);
+}
+
+
+
+/* 이미지박스 */
+
+
+.img-container {
+  margin-top: 24px;
+}
+
+
+/* 생활용품 */
+
+
+.living-area {
+  display: flex;
+  position: relative;
+  width: 1020px;
+  height: 634px;
+  border-top: 1px solid var(--color-brown-300);
+  border-bottom: 1px solid var(--color-brown-300);
+  
+}
+
+.text-living {
+  width: 89px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--color-brown-300);
+  margin-top: 48px;
+  margin-left: 24px;
+}
+
+
+.direct-link1 {
+  display: flex;
+  align-items: center;
+  position: absolute;  
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 84px;
+  margin-left: 24px;
+  color: var( --color-gray-700);  
+}
+
+
+.direct-link1::after {
+  content: '';  
+  position: relative;  
+  width: 6px;
+  height: 10px;
+  background-image: url('../../assets/icon/angle-right-default.svg');
+  background-repeat: no-repeat;  
+  margin-left: 4px;
+}
+
+.hot-keywored {
+  position: absolute;
+  font-weight: 500;
+  font-size: 18px;
+  top: 349px;
+  left: 24px;
+
+}
+
+.hash-tag1 {  
+  position: absolute;
+  flex-direction: column;   
+  top: 382px;
+  left: 24px;
+  margin-bottom: 28px;  
+  color: var(--color-brown-300);
+}
+
+
+a[class^="tag1"] {
+  display: flex;   
+  position: relative;
+  flex-direction: row;
+  justify-content: center;  
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+    
+  height: 26px;
+  border: 1px solid var(--color-gray-500);   
+}
+
+
+.tag1-1 {
+  width: 72px;
+  margin-top: 8px;
+} 
+
+.tag1-2 { 
+  width: 72px;
+  margin-top: 12px;
+} 
+
+
+.tag1-3, .tag1-4, .tag1-5 {
+  width: 94px;
+  margin-top: 12px;
+} 
+
+
+.tag1-6 {
+  width: 117px;
+  margin-top: 12px;
+} 
+
+
+
+/* 캐러셀 슬라이드 */
+
+
+.carousel-container {
+  display: flex;
+  position: absolute;
+  width: 320px;
+  height: 631px;
+  border: 1px solid red; 
+  left: 174px;
+  overflow: hidden;
+  
+}
+
+.carousel-controls {
+  display: flex;
+  position: relative;  
+  justify-content: space-between;
+  align-items: center;
+  width: 32px;
+  height: 12px;
+  top: 597px;
+  left: 144px;  
+  
+}
+
+
+button[class^="carousel"] {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-gray-700);
+  z-index: 5;  
+}
+
+
+/* 캐러셀 슬라이드 목록 */
+
+.carousel-items {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 640px;
+  height: 631px;  
+}
+
+li[class^="carousel-item"] {  
+  position: relative;
+  width: 320px;
+  height: 631px;
+}
+
+
+.carousel-group, .carousel-link1 {
+  display: flex;
+  position: absolute;
+  width: 320px;
+  height: 631px;
+}
+
+p[class^=carousel-text-area] {
+  position: absolute;
+  width: 260px;
+  height: 90px;
+  top: 483px;
+  left: 30px;
+  background-color: var(--color-brown-300);
+  z-index: 5;  
+}
+
+.carousel-text1 {
+  position: absolute;
+  width: 205px;
+  height: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-white);
+  margin-top: 19px;
+  margin-left: 28px;
+  text-align: center;
+}
+
+.carousel-text2 {
+  position: absolute;
+  width: 215px;
+  height: 19px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-white);
+  margin-top: 51px;
+  margin-left: 23px;
+  text-align: center;
+}
+
+.carousel-img1, .carousel-img2 {
+  display: flex;
+  position: absolute;
+  width: 320px;
+  height: 631px;  
+}
+
+
+
+
+
+/* 생활용품 상품목록 */
+
+
+.img-item-area {
+  display: flex;
+  position: absolute;
+  width: 527px;
+  height: 631px;
+
+  left: 493px;
+  border: 1px solid blue;   
+  overflow: hidden;  
+}
+
+.img-item-area::after {
+  content: '';
+  display: inline-block;
+  position: absolute; 
+  width: 527px;  
+  border-bottom: 1px solid var(--color-gray-600);
+  margin-top: 316px;
+}
+
+.img-item {
+  position: absolute;
+  width: 160px;
+  height: 300px;  
+  top: 9px;
+  left: 16px;
+  border: 1px solid green;
+}
+
+.img-area {
+  display: flex;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+}
+
+.item-text-area3 {   
+  position: absolute;
+  width: 152px;
+  height: 94px;
+  margin-top: 172px;  
+}
+
+
+.item-title {
+  width: 152px;
+  height: 34px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+
+.item-price-option {
+  display: flex;  
+  position: relative;
+  flex-direction: column;
+  width: 135px;
+  height: 48px;
+  margin-top: 12px;  
+}
+
+.sale-case {
+  position: relative;  
+  height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var( --color-red-500);  
+}
+
+
+.price-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 135px;
+  height: 27px;
+  margin-top: 4px;
+  gap: 5px;
+}
+
+.img-item-price1 {
+  display: flex;
+  position: relative;  
+  align-items: center;  
+  height: 27px;
+  font-weight: 700;
+  font-size: 18px;    
+}
+
+.img-item-price1::after {
+  content: '원';  
+  font-weight: 400;
+  font-size: 14px;  
+  margin-left: 5px;
+}
+
+/* 2번째 이미지*/
+
+
+.img-position2 {    
+  left: 192px;  
+  border: 1px solid pink;
+}
+
+.rocket {    
+  position: relative;  
+  width: 54px;
+  height: 14px;    
+  
+}
+
+
+/* 3번째 이미지 */
+
+
+.img-position3 {    
+  left: 368px;  
+  border: 1px solid pink;
+}
+
+/* 4번째이미지 */
+
+.img-position4 {
+  top: 325px;    
+  left: 16px;  
+  border: 1px solid pink;
+}
+
+/* 5번째이미지 */
+
+.img-position5 {
+  top: 325px;    
+  left: 192px;  
+  border: 1px solid pink;
+}
+
+/* 6번째이미지 */
+
+.img-position6 {
+  top: 325px;    
+  left: 368px;  
+  border: 1px solid pink;
+}
+
+
+
+
+
+
+/* 주방용품 */
+
+
+.kitchen-area {
+  display: flex;
+  position: relative;
+  width: 1020px;
+  height: 634px;
+  border-top: 1px solid var(--color-green-700);
+  border-bottom: 1px solid var(--color-green-700);
+  margin-top: 24px;
+}
+
+.text-kitchen {  
+  width: 89px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--color-green-700);
+  margin-top: 48px;
+  margin-left: 24px;
+}
+
+.hash-tag2 {
+  display: flex;  
+  position: absolute;
+  flex-direction: column;   
+  margin-top: 382px;
+  margin-left: 24px;
+  margin-bottom: 28px;
+  color: var(--color-green-700);
+}
+
+.tag2-1 {
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  width: 83px;
+  height: 26px;
+  border: 1px solid var(--color-gray-500);  
+} 
+
+.tag2-2 {   
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+
+  width: 106px;
+  height: 26px;
+  border: 1px solid var(--color-gray-500);  
+  margin-top: 12px;   
+}
+
+.tag2-3, .tag2-4, .tag2-5, .tag2-6  {   
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+
+  width: 61px;
+  height: 26px;
+  border: 1px solid var(--color-gray-500);  
+  margin-top: 12px;   
+}
+
+
+
+
+.direct-link2 {
+  display: flex;
+  align-items: center;
+  position: absolute;  
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 84px;
+  margin-left: 24px;
+  color: var( --color-gray-700);  
+}
+
+.direct-link2::after {
+  content: '';  
+  position: relative;  
+  width: 6px;
+  height: 10px;
+  background-image: url('../../assets/icon/angle-right-default.svg');
+  background-repeat: no-repeat;  
+  margin-left: 4px;
+}

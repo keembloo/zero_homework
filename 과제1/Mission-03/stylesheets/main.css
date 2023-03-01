@@ -2,6 +2,8 @@
 
 @import url("./init/normalize.css");
 @import url("./init/base.css");
+@import url("./pages/reset.css");
+
 
 @import url("./common/a11y.css");
 @import url("./common/easings.css");
