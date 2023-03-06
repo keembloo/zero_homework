@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>헤더 - 쿠팡(Coupang)</title>
+  <link rel="icon" href="./assets/favicon/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="link-bar">
+      <div class="bg"></div>
+      <ul class="link-group">
+        <li class="link-item1"><a href="/">로그인</a></li>
+        <li class="link-item2"><a href="/">회원가입</a></li>
+        <li class="link-item3"><a href="/">고객센터</a></li>            
+        <li class="link-item4"><a href="/">쿠팡플레이</a></li>
+        <li class="link-item5"><a href="/">제휴마케팅</a></li>          
+      </ul>
+    </div>    
+    
+  
+      <!-- 그리드영역 -->
+    <div class="grid-area">
+
+      <!-- 카테고리영역 -->
+      <div class="category-area left">        
+        <button type="button" class="button--category">
+          카테고리 
+        </button>
+      </div>   
+      <!-- //카테고리영역 -->
+
+      <!-- 쿠팡로고영역 -->        
+      <h1 class="coupang-logo">
+        <a href="https://www.coupang.com/" rel="noreferrer" target="_blank">
+        <span class="sr-only">Coupang</span>
+        </a>
+      </h1>
+      <!-- //쿠팡로고영역 -->
+
+        <!-- 검색영역 -->
+      <form class="search-bar-area" action="/" method="get">
+        <fieldset class="form-fieldset">
+          <div class="select-box">
+            <select name="searchingCategory" id="select">
+              <option value="all" selected>전체</option>
+            </select>   
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow bi bi-caret-down-fill" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+            </svg>       
+          </div>
+          <input type="search" class="input-search" name="keyword" placeholder="찾고 싶은 상품을 검색해 보세요!" required>
+          <button type="button" class="bnt-mic"><span class="sr-only">음성검색</span></button>
+          <button type="button" class="bnt-search"><span class="sr-only">키워드검색</span></button>
+          
+        </fieldset>
+      </form>
+      <!-- //검색영역 -->
+  
+
+      <!-- 링크목록영역 -->
+      <ul class="link-list">
+        
+        <li class="link-list-1"><a href="/"><img class="icons-rocket" src="./assets/icon/icon-rocket.svg" alt="로켓배송아이콘">로켓배송</a></li>
+        <li class="link-list-2"><a href="/"><img class="icons-fresh"src="./assets/icon/icon-fresh.svg" alt="로켓프레시아이콘">로켓프레시</a></li>
+        <li class="link-list-3"><a href="/">2022년 설날<img class="icons-new" src="./assets/icon/new.svg" alt="신상아이콘"></a></li>
+        <li class="link-list-4"><a href="/">로켓직구</a></li>
+        <li class="link-list-5"><a href="/">골드박스</a></li>
+        <li class="link-list-6"><a href="/">정기배송</a></li>
+        <li class="link-list-7"><a href="/">이벤트/쿠폰</a></li>
+        <li class="link-list-8"><a href="/">기획전</a></li>
+        <li class="link-list-9"><a href="/">여행티켓</a></li>
+      </ul>
+      <!-- //링크목록영역 -->
+
+    
+
+      
+      <!-- 마이쿠팡영역 -->
+      <div class="myCoupang is--active">
+        <button type="button" class="btn-mycoupang">마이쿠팡</button>
+        <ul class="mycoupang-box" role="tablist">
+          <li class="list1" role="tab">
+            <a href="/" role="tab">주문목록</a>                 
+          </li>
+          <li class="list2" role="tab">
+            <a href="/">취소/반품</a>
+          </li>
+          <li class="list3" role="tab">
+            <a href="/">찜리스트</a>
+          </li>
+        </ul>
+      </div>
+      <!-- //마이쿠팡역역 --> 
+
+      <!-- 장바구니영역 -->
+      <div class="cart cart--empty">
+        <button type="button" class="btn-cart">장바구니</button>
+        <div class="message">
+          <div class="message-text">
+            장바구니에 담긴 상품이 없습니다.               
+          </div>            
+        </div>
+      </div>
+      <!-- //장바구니영역 -->
+    
+
+    </div> 
+      
+        
+  </header>
+</body>
+
+</html>

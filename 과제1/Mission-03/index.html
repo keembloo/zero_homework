@@ -59,7 +59,7 @@
 
         <!-- 생활용품 hot키워드 -->
         <p class="hot-keywored">HOT키워드</p>
-        <div class="hash-tag1">          
+        <div class="hash-tag brown">          
           <a href="/" class="tag1-1">#바디오일</a>
           <a href="/" class="tag1-2">#액체세제</a>
           <a href="/" class="tag1-3">#화장실방향제</a>
@@ -71,16 +71,16 @@
         <!-- 캐러셀 슬라이드 -->
         <section id="Carousel" class="carousel-container" aria-roledescription="carousel" aria-label="메인 슬라이드">
           <div class="carousel-controls">
-            <button class="carousel-previous" aria-controls="Carousel" aria-label="이전 슬라이드 보기"></button>
-            <button class="carousel-next" aria-controls="Carousel" aria-label="다음 슬라이드 보기"></button>
+            <button class="carousel-previous" aria-controls="mainCarousel-items" aria-label="이전 슬라이드 보기"></button>
+            <button class="carousel-next" aria-controls="mainCarousel-items" aria-label="다음 슬라이드 보기"></button>
           </div>
 
           <!-- 캐러셀 슬라이드 목록 -->
-          <ul class="carousel-items">
+          <ul id="mainCarousel-items" class="carousel-items">
             <li class="carousel-item1">
               <div class="carousel-group" role="group" aria-roledescription="slide" aria-label="2개 슬라이드 중 1번">
-                <a href="/" class="carousel-link1"> 
-                  <p class="carousel-text-area1">
+                <a href="/" class="carousel-link"> 
+                  <p class="carousel-text-area bgcolor-brown">
                     <span class="carousel-text1">최초의 99.9% 향균</span>
                     <span class="carousel-text2">세균 냄새 걱정 없이 상쾌하게!</span>
                   </p>
@@ -93,13 +93,13 @@
 
             <li class="carousel-item2">
               <div class="carousel-group" role="group" aria-roledescription="slide" aria-label="2개 슬라이드 중 2번">
-                <a href="/" class="carousel-link2"> 
-                  <p class="carousel-text-area2">
-                    <span class="carousel-text1">탈모케어 최대 74%</span>
-                    <span class="carousel-text2">즉시 할인에 쿠폰 할인까지!</span>
+                <a href="/" class="carousel-link"> 
+                  <p class="carousel-text-area bgcolor-brown">
+                    <span class="carousel-text1">비듬완화 임상완료</span>
+                    <span class="carousel-text2">닥터방기원 댄드러프 </span>
                   </p>
                   <span class="carousel-img1">
-                    <img src="./assets/slides/houseware-dandruff.jpg" alt="탈모샴푸 사진">      
+                    <img src="./assets/slides/houseware-dandruff.jpg" alt="닥터방기원샴푸 사진">      
                   </span>           
                 </a>
               </div>
@@ -119,9 +119,10 @@
               </span>
               <p class="item-text-area3">
                 <span class="item-title">왕타 칫솔 바스켓 앤 커버 10p+걸이 5p+바구니</span>
-                <span class="item-price-option">                
+                <span class="item-price-option">     
+                  <span class="sr-only">판매가격</span>           
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">12,900</span>            
+                    <span class="img-item-price1">12,900</span><span class="img-item-price2">원</span>            
                   </span>
                 </span>
               </p>
@@ -135,8 +136,9 @@
               <p class="item-text-area3">
                 <span class="item-title">로레알파리 엑스트라 오디네리 헤어오일 엑스트라 리치</span>
                 <span class="item-price-option">                
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">10,020</span>              
+                    <span class="img-item-price1">10,020</span><span class="img-item-price2">원</span>              
                     <span class="sr-only">배송유형</span><img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">              
                   </span>
                 </span>
@@ -152,8 +154,9 @@
                 <span class="item-title">데일리워터 물걸레 청소포 대형리필 30매, 10팩</span>
                 <span class="item-price-option">
                   <span class="sr-only">할인유형</span><span class="sale-case">즉시할인가</span>
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">15,410</span>              
+                    <span class="img-item-price1">15,410</span><span class="img-item-price2">원</span>              
                     <span class="sr-only">배송유형</span><img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">              
                   </span>
                 </span>
@@ -170,8 +173,9 @@
                 <span class="item-title">트로비스 핸드형 마사지 스택, 1개, 블루</span>
                 <span class="item-price-option">                
                   <span class="sr-only">할인유형</span><span class="sale-case">로켓와우회원가</span>
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">5,740</span>              
+                    <span class="img-item-price1">5,740</span><span class="img-item-price2">원</span>              
                     <span class="sr-only">배송유형</span><img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">              
                   </span>
                 </span>
@@ -187,8 +191,9 @@
               <p class="item-text-area3">
                 <span class="item-title">모던홈 탱크건조대 2단 특대, 1개</span>
                 <span class="item-price-option">             
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">28,550</span>              
+                    <span class="img-item-price1">28,550</span><span class="img-item-price2">원</span>                 
                   </span>
                 </span>
               </p>
@@ -203,8 +208,9 @@
               <p class="item-text-area3">
                 <span class="item-title">웹킵스 황사방역마스크 KF94, 초소형 1개입 25개</span>
                 <span class="item-price-option">                  
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">5,740</span>              
+                    <span class="img-item-price1">5,740</span><span class="img-item-price2">원</span>                
                     <span class="sr-only">배송유형</span><img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">              
                   </span>
                 </span>
@@ -221,7 +227,7 @@
 
         <!-- 주방용품 hot키워드 -->
         <p class="hot-keywored">HOT키워드</p>
-        <div class="hash-tag2">          
+        <div class="hash-tag green">          
           <a href="/" class="tag2-1">#니트릴장갑</a>
           <a href="/" class="tag2-2">#시리얼디스펜서</a>
           <a href="/" class="tag2-3">#와플팬</a>
@@ -231,7 +237,7 @@
         </div>
 
         <!-- 캐러셀 슬라이드 -->
-        <section id="Carousel" class="carousel-container" aria-roledescription="carousel" aria-label="메인 슬라이드">
+        <section id="Carouse2" class="carousel-container" aria-roledescription="carousel" aria-label="메인 슬라이드">
           <div class="carousel-controls">
             <button class="carousel-previous" aria-controls="Carousel" aria-label="이전 슬라이드 보기"></button>
             <button class="carousel-next" aria-controls="Carousel" aria-label="다음 슬라이드 보기"></button>
@@ -241,13 +247,13 @@
           <ul class="carousel-items">
             <li class="carousel-item1">
               <div class="carousel-group" role="group" aria-roledescription="slide" aria-label="2개 슬라이드 중 1번">
-                <a href="/" class="carousel-link1"> 
-                  <p class="carousel-text-area1">
-                    <span class="carousel-text1">최초의 99.9% 향균</span>
-                    <span class="carousel-text2">세균 냄새 걱정 없이 상쾌하게!</span>
+                <a href="/" class="carousel-link"> 
+                  <p class="carousel-text-area bgcolor-green">
+                    <span class="carousel-text1">텀블러</span>
+                    <span class="carousel-text2">실용성에 디자인까지, 착한 텀블러</span>
                   </p>
                   <span class="carousel-img1">
-                    <img src="./assets/slides/houseware-downy.jpg" alt="다우니 섬유유연제 사진">      
+                    <img src="./assets/slides/kitchenware-tumbler.jpg" alt="텀블러 사진">      
                   </span>           
                 </a>
               </div>
@@ -255,13 +261,13 @@
 
             <li class="carousel-item2">
               <div class="carousel-group" role="group" aria-roledescription="slide" aria-label="2개 슬라이드 중 2번">
-                <a href="/" class="carousel-link2"> 
-                  <p class="carousel-text-area2">
-                    <span class="carousel-text1">탈모케어 최대 74%</span>
-                    <span class="carousel-text2">즉시 할인에 쿠폰 할인까지!</span>
+                <a href="/" class="carousel-link"> 
+                  <p class="carousel-text-area bgcolor-green">
+                    <span class="carousel-text1">보온 도시락</span>
+                    <span class="carousel-text2">맛있는 온도로 유지되는 집밥!</span>
                   </p>
                   <span class="carousel-img1">
-                    <img src="./assets/slides/houseware-dandruff.jpg" alt="탈모샴푸 사진">      
+                    <img src="./assets/slides/kitchenware-lunchbox.jpg" alt="도시락통 사진">      
                   </span>           
                 </a>
               </div>
@@ -270,20 +276,23 @@
         </section>
 
         
-        <!-- 생활용품 상품목록 -->
+        <!-- 주방용품 상품목록 -->
 
         <ul class="img-item-area">
 
           <li class="img-item">
             <a href="/">
               <span class="img-area">
-                <img src="./assets/category/houseware/houseware-basket.jpg" alt="칫솔 바구니 세트 사진">
+                <img src="./assets/category/kitchenware/kitchenware-kitchentowel.jpg" alt="키친타올 사진">
               </span>
               <p class="item-text-area3">
-                <span class="item-title">왕타 칫솔 바스켓 앤 커버 10p+걸이 5p+바구니</span>
-                <span class="item-price-option">                
+                <span class="item-title">코디 아름드리 Size Up 키친타올 250매, 12롤, 1팩</span>
+                <span class="item-price-option">
+                  <span class="sr-only">할인유형</span><span class="sale-case">로켓와우회원가</span>
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">12,900</span>            
+                    <span class="img-item-price1">14,300</span><span class="img-item-price2">원</span>
+                    <span class="sr-only">배송유형</span><img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">             
                   </span>
                 </span>
               </p>
@@ -292,13 +301,14 @@
           <li class="img-item img-position2">
             <a href="/">
               <span class="img-area">
-                <img src="./assets/category/houseware/houseware-hairoil.jpg" alt="헤어오일 사진">
+                <img src="./assets/category/kitchenware/kitchenware-airfryer.jpg" alt="에어프라이어 사진">
               </span>
               <p class="item-text-area3">
-                <span class="item-title">로레알파리 엑스트라 오디네리 헤어오일 엑스트라 리치</span>
+                <span class="item-title">니코 에어프라이어 오븐겸용 5.2L, DWAF-5.5NK</span>
                 <span class="item-price-option">                
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">10,020</span>              
+                    <span class="img-item-price1">37,800</span><span class="img-item-price2">원</span>               
                     <span class="sr-only">배송유형</span><img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">              
                   </span>
                 </span>
@@ -308,14 +318,15 @@
           <li class="img-item img-position3">
             <a href="">
               <span class="img-area">
-                <img src="./assets/category/houseware/houseware-cleaningcloth.jpg" alt="물걸레 청소포 사진">
+                <img src="./assets/category/kitchenware/kitchenware-paperfoil.jpg" alt="종이호일 사진">
               </span>
               <p class="item-text-area3">
-                <span class="item-title">데일리워터 물걸레 청소포 대형리필 30매, 10팩</span>
+                <span class="item-title">착한식재료, 종이호일 30cm X 20m, 2개</span>
                 <span class="item-price-option">
                   <span class="sr-only">할인유형</span><span class="sale-case">즉시할인가</span>
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">15,410</span>              
+                    <span class="img-item-price1">11,400</span><span class="img-item-price2">원</span>              
                     <span class="sr-only">배송유형</span><img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">              
                   </span>
                 </span>
@@ -326,14 +337,14 @@
           <li class="img-item img-position4">
             <a href="/">
               <span class="img-area">
-                <img src="./assets/category/houseware/houseware-massagestick.jpg" alt="마사지스택 사진">
+                <img src="./assets/category/kitchenware/kitchenware-zipperbag.jpg" alt="지퍼백 사진">
               </span>
               <p class="item-text-area3">
-                <span class="item-title">트로비스 핸드형 마사지 스택, 1개, 블루</span>
-                <span class="item-price-option">                
-                  <span class="sr-only">할인유형</span><span class="sale-case">로켓와우회원가</span>
+                <span class="item-title">기본에 크린지퍼백 소형 100매, 5개</span>
+                <span class="item-price-option">
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">5,740</span>              
+                    <span class="img-item-price1">5,740</span><span class="img-item-price2">원</span>              
                     <span class="sr-only">배송유형</span><img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">              
                   </span>
                 </span>
@@ -344,13 +355,14 @@
           <li class="img-item img-position5">
             <a href="/">
               <span class="img-area">
-                <img src="./assets/category/houseware/houseware-dryingrack.jpg" alt="빨래건조대 사진">
+                <img src="./assets/category/kitchenware/kitchenware-paperspoon.jpg" alt="종이스푼 사진">
               </span>
               <p class="item-text-area3">
-                <span class="item-title">모던홈 탱크건조대 2단 특대, 1개</span>
+                <span class="item-title">메이그린 친환경 종이 위생 스푼, 10개입, 10개</span>
                 <span class="item-price-option">             
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">28,550</span>              
+                    <span class="img-item-price1">4,850</span><span class="img-item-price2">원</span>              
                   </span>
                 </span>
               </p>
@@ -360,13 +372,15 @@
           <li class="img-item img-position6">
             <a href="/">
               <span class="img-area">
-                <img src="./assets/category/houseware/houseware-mask.jpg" alt="방역마스크 사진">
+                <img src="./assets/category/kitchenware/kitchenware-illycoffee.jpg" alt="캡슐커피 사진">
               </span>
               <p class="item-text-area3">
-                <span class="item-title">웹킵스 황사방역마스크 KF94, 초소형 1개입 25개</span>
-                <span class="item-price-option">                  
+                <span class="item-title">일리 아라비카 셀렉션 브라질 캡슐커피, 120g 1개</span>
+                <span class="item-price-option">
+                  <span class="sr-only">할인유형</span><span class="sale-case">로켓와우회원가</span>                  
+                  <span class="sr-only">판매가격</span>
                   <span class="price-info">
-                    <span class="sr-only">판매가격</span><span class="img-item-price1">5,740</span>              
+                    <span class="img-item-price1">12,415</span><span class="img-item-price2">원</span>              
                     <span class="sr-only">배송유형</span><img src="./assets/icon/badge-rocket.svg" alt="로켓배송" class="rocket">              
                   </span>
                 </span>
